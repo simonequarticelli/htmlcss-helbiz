@@ -1,0 +1,270 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+header{
+  background: url(https://www.helbiz.com/asset/pages/newhome/images/hero-bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 600px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  font-weight: bold;
+  top:0;
+  left:0;
+  width: 100vw;
+  padding: 20px 200px;
+  z-index: 1;
+}
+.opacity{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  filter: blur(10px);
+  position: absolute;
+  opacity: .3;
+  z-index: -1;
+  top:0;
+  left:0;
+}
+nav a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.item>a{
+  padding:0px 20px;
+
+}
+.lang{
+  display: inline-block;
+  margin-left:20px;
+}
+.lang a:nth-last-child(2){
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  height: 25px;
+  padding:5px 5px;
+}
+.title{
+  text-align: center;
+}
+.title small{
+  display: block;
+  padding:20px 0px;
+  font-size: 20px;
+}
+.title h1{
+  font-size: 50px;
+}
+.title a{
+  padding:0px 5px;
+}
+.first{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding:100px 0px;
+}
+.card{
+  width: 45%;
+  margin: 0px 5px;
+  background-color: #fafafa;
+  padding:100px 0px;
+  height: auto;
+  text-align: center;
+}
+.animation{
+  transition: 1s;
+}
+.animation:hover{
+  transform: scale(.9);
+}
+.card a{
+  display: block;
+  text-decoration: none;
+}
+.card>img,
+.animation>img{
+  width: 30%;
+  height: auto;
+}
+.second{
+  background: url(https://www.helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg) left no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin-bottom:80px;
+}
+.phone{
+  margin:100px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sx{
+  font-size: 25px;
+}
+.dx h1{
+  padding-bottom:10px;
+}
+.smart{
+  background: url(https://www.helbiz.com/asset/pages/newhome/images/ScooterHelbiz-2400.jpg) left no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  color:white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contenuto-smart{
+  margin-right: 200px;
+  width: 40%;
+}
+.container-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  color:white;
+}
+.smart a,
+.container-card a{
+  color: white;
+  text-decoration: none;
+}
+.card-1,
+.card-2{
+  height: 500px;
+  width: 650px;
+  margin: 20px 0px;
+}
+.card-1{
+  background: url(https://www.helbiz.com/asset/pages/newhome/images/HelbiZAPP.png) bottom no-repeat, linear-gradient(#41566A, #252F38) center no-repeat;
+  background-size: 530px, 100%;
+}
+.card-2{
+  background: url(https://www.helbiz.com/asset/pages/newhome/images/Cities-1500.jpg) center no-repeat;
+  background-size: cover;
+}
+.after-footer{
+  margin:50px 0px;
+  height: 400px;
+  display: flex;
+  background: url(https://www.helbiz.com/asset/pages/newhome/images/Social-Banner.jpg) center no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.family{
+  background-color: white;
+  padding:70px 180px;
+}
+footer{
+  padding:30px 150px;
+  background-color: black;
+  color:white;
+}
+.row-1,
+.row-2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding:10px 80px;
+}
+footer a{
+  color:white;
+  text-decoration: none;
+  display: block;
+}
+.row-2 a{
+  display: inline-block;
+}
+.row-2{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-items: center;
+  padding:40px 80px;
+}
+.link{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 768px){
+  header{
+    padding:0px 30px;
+  }
+  .item,
+  .lang{
+    display: none;
+  }
+  nav{
+    padding:40px 30px;
+  }
+  .card{
+    width: 100%;
+  }
+  footer{
+    padding:10px 20px;
+  }
+  .row-1,
+  .row-2{
+  flex-direction: column;
+  padding:0;
+  margin: 0;
+  }
+  .link{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .row-2{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: flex-start;
+    padding:40px 0px;
+  }
+  .family{
+    background-color: white;
+    padding:40px 70px;
+  }
+  .contenuto-smart{
+    margin:0;
+  }
+  .smart{
+    justify-content: center;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .item,
+  .lang{
+    display: none;
+  }
+  nav{
+    padding:40px 30px;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+
+}
